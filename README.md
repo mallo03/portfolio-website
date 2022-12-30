@@ -1,3 +1,3 @@
 # portfolio-website
-My own portfolio website.
+My own portfolio website utilising Bootstrap for styling.
 Still under development.
