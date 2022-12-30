@@ -1,3 +1,3 @@
 # web-portfolio
-My own portfolio website utilising Bootstrap for styling.
+My own web portfolio utilising Bootstrap for styling.
 Still under development.
