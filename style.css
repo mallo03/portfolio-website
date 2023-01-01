@@ -10,7 +10,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-color: white;
+    background-color: #F5EBE0;
 }
 
 nav {
@@ -20,8 +20,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 22.5px;
-    padding-bottom:45px;
+    padding-top: 20px;
+    padding-bottom:20px;
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 20px;
@@ -32,10 +32,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
-    border-bottom: .1px;
-    border-bottom-style: solid;
-    border-color: gray;
+    background-color: #FEFCF3;
 }
 
 #homenav {
@@ -63,7 +60,7 @@ nav ul li a:hover {
 
 #aboutme {
     position:absolute;
-    top: 45%;
+    top: 40%;
     left: 25%;
 }
 
@@ -73,67 +70,38 @@ nav ul li a:hover {
     padding-bottom: 2%;
 }
 
-#quickintro {
+#quickinfo {
     letter-spacing: 2px;
 }
 
+/* Typewrite effect */
 #one {
     display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
 }
 
 #two {
     display: inline-block;
+    white-space: nowrap;
 }
 
- #one {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing1 3.5s steps(40, end),
-      blink-caret1 .75s step-end infinite;
-  }
-
- #two {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation-delay: 5s;
-    animation: 
-      typing2 3.5s steps(40, end),
-      blink-caret2 .75s step-end infinite;
-  }
-
-  /* The typing effect */
-  @keyframes typing1 {
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
-    to { width: 70% }
-
-  }
+    to { width: 88% }
+}
   
   /* The typewriter cursor effect */
-  @keyframes blink-caret1 {
-    from, to { border-color: transparent }
-    30% {border-color: black;}
-    31% { border-color: transparent; }
-  }
-  
-/* The typing effect */
-@keyframes typing2 {
-    from { width: 0 }
-    to { width: 70% }
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: black; }
+}
 
-    }
-    
-    /* The typewriter cursor effect */
-    @keyframes blink-caret2 {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
-    100% {
-        border-color: transparent;
-    }
-    }
+  
