@@ -35,7 +35,7 @@ nav {
     background-color: #FEFCF3;
 }
 
-#homenav {
+.homenav {
     color: black;
     letter-spacing: .5px;
     text-decoration: none;
@@ -47,12 +47,12 @@ nav ul li {
     padding: 10px 25px;
 }
 
-nav ul li a {
+.list {
     color: black;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.list:hover {
     color: black;
     transition: .5s;
     text-decoration: underline;
@@ -98,10 +98,81 @@ nav ul li a:hover {
     to { width: 88% }
 }
   
-  /* The typewriter cursor effect */
+/* The typewriter cursor effect */
 @keyframes blink-caret {
 from, to { border-color: transparent }
 50% { border-color: black; }
 }
 
-  
+/* Dark mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.dark-mode-top-section {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #333333;    
+    color: white;
+}
+
+.navcolor-dark-mode {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555555;
+}
+
+.homenav-dark-mode {
+    color: white;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.list-dark-mode {
+    color: white;
+    text-decoration: none;
+}
+
+.list-dark-mode:hover {
+    color: white;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+.one-dark-mode {
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret-dark-mode .75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret-dark-mode {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+/*
+Light Mode Colour Palatte:
+    #FEFCF3
+    #F5EBE0
+    #F0DBDB
+    #DBA39A
+
+Dark Mode Colour Palatte:
+    #111111
+    #333333
+    #555555
+    #777777
+    #999999
+
+*/
