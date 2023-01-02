@@ -16,18 +16,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <div id="navcolor", class="navcolor">
+            <nav>
+                <a href="#home" id="homenav", class="homenav">Michael G</a>
+                <ul>
+                    <li class="list"><a href="#about", class="list", id="list1">About me</a></li>
+                    <li><a href="#posts", class="list", id="list2">Posts</a></li>
+                    <li><a href="#contact", class="list", id="list3">Contact</a></li>
+                </ul>
+                <label class="switch">
+                    <input type="checkbox", onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+            </nav>
+        </div>
+
         <div id="topsection", class="topsection">
-            <div id="navcolor", class="navcolor">
-                <nav>
-                    <a href="#home" id="homenav", class="homenav">Michael G</a>
-                    <ul>
-                        <li class="list"><a href="#about", class="list", id="list1">About me</a></li>
-                        <li><a href="#posts", class="list", id="list2">Posts</a></li>
-                        <li><a href="#contact", class="list", id="list3">Contact</a></li>
-                    </ul>
-                    <button onclick="myFunction()">Toggle dark mode</button>
-                </nav>
-            </div>
+           
 
             <section id="aboutme">
                 <div id="intro">
@@ -38,24 +44,21 @@
                     <h2 id="one", class="one">I study software engineering.</h2>
                 </div>
             </section>
-
-            <section>
-
-            </section>
-
         </div>
 
-
-
-        <section class="posts">
-            <div id="post1">
-                <h2>Post</h2>
-            <h3>Project 1</h3>
-            <p>Aenean non ultrices nulla, nec sagittis libero. Nam pharetra non augue eu bibendum. Nunc porta, turpis vitae maximus commodo, nibh orci consectetur massa, quis aliquet odio est et risus. Maecenas sed elementum mauris. Morbi consectetur feugiat augue, eget aliquam nisi congue euismod. Curabitur rutrum rhoncus venenatis. Cras ante nisi, pretium ut iaculis eget, eleifend quis odio. Aliquam risus metus, vestibulum eu facilisis vel, tristique suscipit velit. Fusce dictum at lacus eu cursus.</p>
+        <section class="about">
+            <div class="main-about", id="main-about">
+                <img src="https://media.istockphoto.com/id/1251629816/photo/the-perfect-setting-to-complete-work.jpg?b=1&s=170667a&w=0&k=20&c=e8mSv3z6PhT18EUmzgtdMCbQecYzhHoqu_ts8tFdN6c=" alt="">
+                <div id="about text">
+                    <h2>Post</h2>
+                    <h3>Project 1</h3>
+                    <p>Aenean non ultrices nulla, nec sagittis libero. Nam pharetra non augue eu bibendum. Nunc porta, turpis vitae maximus commodo, nibh orci consectetur massa, quis aliquet odio est et risus. Maecenas sed elementum mauris. Morbi consectetur feugiat augue, eget aliquam nisi congue euismod. Curabitur rutrum rhoncus venenatis. Cras ante nisi, pretium ut iaculis eget, eleifend quis odio. Aliquam risus metus, vestibulum eu facilisis vel, tristique suscipit velit. Fusce dictum at lacus eu cursus.</p>
+                </div>
             </div>
         </section>
 
         <section class="posts">
+            <img src="https://media.istockphoto.com/id/1251629816/photo/the-perfect-setting-to-complete-work.jpg?b=1&s=170667a&w=0&k=20&c=e8mSv3z6PhT18EUmzgtdMCbQecYzhHoqu_ts8tFdN6c=" alt="">
             <div id="post2">
                 <h2>Post</h2>
             <h3>Project 2</h3>
