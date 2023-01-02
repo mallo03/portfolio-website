@@ -9,6 +9,7 @@ body {
     background-color: #F0DBDB;
 }
 
+ /* Hero */
 .topsection {
     height: 100vh;
     width: 100%;
@@ -116,7 +117,37 @@ from, to { border-color: transparent }
 50% { border-color: black; }
 }
 
-/* The switch - the box around the slider */
+/*About text section*/
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #F0DBDB;
+}
+
+.about img {
+    height:auto;
+    width: 430px;
+}
+
+.main-about{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about2 {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #F5EBE0;
+}
+
+/* 
+Dark Mode Button
+The switch - the box around the slider 
+*/
 .switch {
   position: relative;
   display: inline-block;
@@ -142,7 +173,6 @@ from, to { border-color: transparent }
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
-  
 }
 
 .slider:before {
