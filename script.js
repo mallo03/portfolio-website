@@ -50,4 +50,25 @@ function myFunction() {
     } else {
         navbar.className = 'navcolor';
     }
+
+    let about = document.getElementById('about')
+    if (about.className === 'about') {
+        about.className = 'about-dark-mode';
+    } else {
+        about.className = 'about';
+    }
+
+    let postssection = document.getElementById('posts-section')
+    if (postssection.className === 'posts-section') {
+        postssection.className = 'posts-section-dark-mode';
+    } else {
+        postssection.className = 'posts-section';
+    }
+
+    let footer = document.getElementById('footer')
+    if (footer.className === 'footer') {
+        footer.className = 'footer-dark-mode';
+    } else {
+        footer.className = 'footer';
+    }
 }

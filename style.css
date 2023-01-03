@@ -124,9 +124,10 @@ from, to { border-color: transparent }
     background-color: #F0DBDB;
 }
 
-.about img {
+.about-img img {
     height:auto;
     width: 430px;
+    border-radius: 5px;
 }
 
 .main-about{
@@ -138,10 +139,57 @@ from, to { border-color: transparent }
     justify-content: space-around;
 }
 
-.about2 {
+.main-about h2 {
+    padding-bottom: 10px;
+}
+
+.main-about h3 {
+    padding-bottom: 10px;
+}
+
+/*Posts section*/
+
+.posts-section {
     width: 100%;
     padding: 100px 0px;
     background-color: #F5EBE0;
+}
+
+.posts{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.posts-text h1 {
+    margin-bottom: 20px;
+}
+
+.posts-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Footer section*/
+footer {
+    position: relative;
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #FEFCF3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+footer h4 {
+    padding-bottom: 5px;
+}
+
+footer a {
+    padding: 5px 5px;
 }
 
 /* 
@@ -269,6 +317,29 @@ input:checked + .slider:before {
     50% { border-color: white; }
 }
 
+.about-dark-mode {
+    width: 100%;
+    padding: 100px 0px;
+    background-color:#111111;
+}
+
+.posts-section-dark-mode {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #333333;
+}
+
+.footer-dark-mode {
+    position: relative;
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+
 /*
 Light Mode Colour Palatte:
     #FEFCF3
@@ -282,5 +353,4 @@ Dark Mode Colour Palatte:
     #555555
     #777777
     #999999
-
 */
